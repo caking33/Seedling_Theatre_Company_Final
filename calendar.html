@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59SWR6NW');</script>
+<!-- End Google Tag Manager -->        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intiial-scale=1">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/02fa1d5f8a.js" crossorigin="anonymous"></script> 
+            <link rel="stylesheet" href="mystyle.css">
+         
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+        
+         <!--Font Awesome-->
+            <script src="https://kit.fontawesome.com/02fa1d5f8a.js" crossorigin="anonymous"></script> 
+
+<!--<title>Accordion test</title>
+         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready( function() {
+                
+                //initalize accordion
+                $('#Accordion ul').each( function() {
+                    var currentURI = window.location.href;
+                    var links = $('a',this);
+                    var collapse = true;
+                    for (var i = 0; i < links.size(); i++) {
+                        var elem = links.eq(i);
+                        var href = elem.attr('href');
+                        var hrefLength = href.length;
+                        var compareTo = currentURI.substr(-1*hrefLength);
+                        
+                        if (href == compareTo) {
+                            collapse = false;
+                            break;
+                        }
+                    };
+                    if (collapse) {
+                        $(this).hide();
+                    }
+                });
+                
+                $("#Accordion").delegate('span', 'click', function () {
+                    var ul= $(this).next('ul');
+                    if (ul.is(':visble')) {
+                        ul.slideUp(500);
+                    } else {
+                        $('Accordion ul').not(ul).slideUp(500);
+                        ul.slideDown(500);
+                    }
+                });
+            });
+        </script>-->     
+    </head>
+
+<body>
+     <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59SWR6NW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+<style>
+body {
+  background-image: url(images/vine_background_full.png)
+}
+</style>
+    
+        <div class="container p-0">
+        <header class="row no-gutters">
+            <div class="col mt-auto pl-4 pb-4">
+                 <a href="calendar.html" class="cal-icon"><i class="fa-solid fa-calendar-days fa-2xl" style="color: #a5c8ac;"></i></a>
+            </div>
+            <div class="col-8 mt-auto">
+                <a class="link" href="index.html"><img src="images/Logo.png" alt="" class="img-fluid p-3"></a>
+            </div>
+            <div class=" login col mt-auto p-3">   
+                <div class="link float-right">
+                    <a href="#" type="button" class="login pr-0" data-toggle="modal" data-target="#modalRegisterForm">Sign in</a>&nbsp; 
+                    <a href="cart.html" class="cart float-right pr-3"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #a5c8ac;"></i></a>
+                </div>
+            </div>
+        </header> 
+        
+        
+<!--Modal Sign-In-->
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+    
+            <form class="text-center border border-light p-5" action="#!">
+
+                <p class="h4 mb-4" >Sign in</p>
+                
+                <input type="email" id="modalRegisterForm" class="form-control mb-4" placeholder="E-mail">
+                <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+                
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                            <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" style="color:#348444">Forgot password?</a>
+                    </div>
+                </div>
+
+                <button class="btn btn-block my-4 text-white"  type="submit" style="background-color:#348444">Sign in</button>
+
+                <p>Not a member?
+                    <a href="" style="color:#348444">Register</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+ 
+ <!--Navigation Bar-->             
+        <nav class="navbar navbar-expand nav justify-content-center p-0">
+            <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="classes.html">Classes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="calendar.html">Calendar</a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="store.html">Store</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            </ul>
+        </nav>
+        </div>
+    
+    
+<!--initalize accordion--
+    <ul id="accordion" class="accordion">
+        <li>
+            <span><div Class="links"><i class="fa fa-bullhorn"></i> Seedling Theatre <i class="fa fa-chevron-down"></i></div></span>
+            <ul class="submenu">
+                <li><a href="#">Frozen Cast</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </li>
+        <li>
+            
+            <span><div class="links"><i class="fa fa-asterisk"></i>Intro Classes<i class="fa fa-chevron-down"></i></div></span>
+            <ul class="submenu">
+                <li><a href="#">Sprouts</a></li>
+                <li><a href="#">Musical Theatre</a></li>
+                <li><a href="#">Acting</a></li>
+                <li><a href="#">Vocal Performance</a></li>
+            </ul>
+        </li>
+        
+        <span><div class="links"><i class="fa fa-bars"></i> Adv Classes<i class="fa fa-chervon-down"></i></div></span> 
+        <ul class="submenu">
+                <li><a href="#">Design</a></li>
+        </ul>
+        
+        <li>
+            <span>INFO</span>
+            <ul>
+                <li><a href="#">Dance I</a></li>
+                <li><a href="#">Dance II</a></li>
+            </ul>
+        </li>
+    </ul>
+ >
+
+
+<!--Calendar-->   
+    
+<div class="container p-0 pb-5 mb-3 bg-white">
+  <div class="row p-0 ">
+            <div class="col-12">
+    <div class="container p-0 pl-4 pr-3 mb-5" style="max-width: 1336px; background-image: url(images/vine_background.png)">
+            <div class="calendar p-0 mb-5">
+                <div class="text-center">
+                    <h1 class="month font-weight text-white text-uppercase text-center pb-0 pt-5">November</h1>
+                    <h6 class="text-white pb-2">2023</h6>
+                </div>
+<!--Dropdowns-->
+<div class="container p-0 pb-3 mb-3 text-center">
+    <div class="dropdown mb-2 ">
+  <button class="btn-cal dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Months
+  </button>
+  <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">January</a>
+    <a class="dropdown-item" href="#">Febuary</a>
+    <a class="dropdown-item" href="#">March</a>
+    <a class="dropdown-item" href="#">April</a>
+    <a class="dropdown-item" href="#">May</a>
+    <a class="dropdown-item" href="#">June</a>
+    <a class="dropdown-item" href="#">July</a>
+    <a class="dropdown-item" href="#">August</a>
+    <a class="dropdown-item" href="#">September</a>
+    <a class="dropdown-item" href="#">October</a>
+    <a class="dropdown-item" href="#">November</a>
+    <a class="dropdown-item" href="#">December</a>
+  </div>
+</div>
+
+    
+
+    
+<!--Filters--> 
+    <nav class="navbar-cal navbar-default pb-3">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button " class="navbar-toggle-collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="text pl-2 pr-2">Filters</span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#"><span class="text-white" target="_blank">Instructors</span></a></li>
+                    <li class="active "><a href="#" class="text-white"> Frozen Cast <span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle text-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expaned="false">Classes <span class="caret"></span></a>
+                        <ul class="dropdown-menu p-2 text-center">
+                            <li><a href="#">Sprouts</a></li>
+                            <li><a href="#">Musical Theatre</a></li>
+                            <li><a href="#">Acting</a></li>
+                            <li><a href="#">Vocal Performance</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            
+        </div>
+    </nav>
+</div>
+<!--Dates-->
+            
+                <ol class="day-cal list-unstyled p-0">
+                    <li class="font-weight-bold text-uppercase text-center border">Sun</li>
+                    <li class="font-weight-bold text-uppercase text-center border">Mon</li>
+                    <li class="font-weight-bold text-uppercase text-center border">Tue</li>
+                    <li class="font-weight-bold text-uppercase text-center border">Wed</li>
+                    <li class="font-weight-bold text-uppercase text-center border">Thur</li>
+                    <li class="font-weight-bold text-uppercase text-center border">Fri</li>
+                    <li class="font-weight-bold text-uppercase text-center border">Sat</li>
+                </ol>
+                
+                <ol class="days-cal list-unstyled ">
+                    <li class="border"></li>
+                    <li class="border"></li>
+                    <li class="border"></li>
+                    <li class="border"> 1
+                    
+                        <div class="event" style="background-color: #96E2A4"><a href="#"> 4pm Jrs Mary Poppins</a></div>
+                        <div class="event" style="background-color: #F9D399"><a href="#"> 5pm Showcase Vocal Performance</a></div>
+                        <div class="event" style="background-color: #96E2A4"><a href="#"> 6pm Spotlight Mary Poppins</a></div>
+                  
+                    </li>
+                    <li class="border">2
+               
+                        <div class="event" style="background-color: ##80D991"><a href="#"> 4pm Thurs Teens Mary Poppins</a></div>
+                        <div class="event" style="background-color: ##80D991"><a href="#"> 5pm Vocal Performance</a></div>
+                        <div class="event" style="background-color: #F9D399"><a href="#"> 6pm Showcase Cast Mary Poppins</a></div>
+                        <div class="event" style="background-color: ##80D991"><a href="#"> 6pm Vocal Performance</a></div>
+                  
+                    </li>
+                    <li class="border">3
+                    
+                        <div class="event" style="background-color:antiquewhite"><a href="#"> Private Vocal Students' Performance</a></div>
+                    
+                    </li>
+                    <li class="border">4
+                  
+                        <div class="event" style="background-color: #A5E885"><a href="#"> 9am Center Stage Mary Poppins--Make up class</a></div>
+                        <div class="event" style="background-color: #A5E885"><a href="#"> 11am Tues Teens Mary Poppins--Make up class</a></div>
+                        <div class="event" style="background-color: #96E2A4"><a href="#"> 7pm After Hours Vocal class Show</a></div>
+                   
+                    </li>
+                    <li class="border">5
+                    </li>
+                    <li class="border">6
+                     
+                        <div class="event" style="background-color: #CDFFB5"><a href="#"> 4pm Sprouts Musical Theatre</a></div>
+                        <div class="event" style="background-color: #CDFFB5"><a href="#"> 5pm Jrs Acting: The IFA is on Its Way</a></div>
+                        <div class="event" style="background-color: #CDFFB5"><a href="#"> 6:30pm Teens Acting: The IFA is on Its Way</a></div>
+                  
+                    </li>
+                    <li class="border">7
+                    
+                        <div class="event" style="background-color: #A5E885"><a href="#"> 4pm Center Stage Mary Poppins</a></div>
+                        <div class="event" style="background-color: #A5E885"><a href="#"> 5pm Level 1 Acting Skills</a></div>
+                        <div class="event" style="background-color: #A5E885"><a href="#"> 6pm Level 2 Acting Skills</a></div>
+                        <div class="event" style="background-color: #A5E885"><a href="#"> 6pm Tues Teens Mary Poppins</a></div>
+                   
+                    </li>
+                    <li class="border">8
+                    
+                        <div class="event" style="background-color: #96E2A4"><a href="#"> 4pm Jrs Mary Poppins</a></div>
+                        <div class="event" style="background-color: #F9D399"><a href="#"> 5pm Showcase Vocal Performance</a></div>
+                        <div class="event" style="background-color: #96E2A4"><a href="#"> 6pm Spotlight Mary Poppins</a></div>
+                   
+                    </li>
+                    <li class="border">9
+                 
+                        <div class="event" style="background-color: ##80D991"><a href="#"> 4pm Thurs Teens Mary Poppins</a></div>
+                        <div class="event" style="background-color: ##80D991"><a href="#"> 5pm Vocal Performance</a></div>
+                        <div class="event" style="background-color: #F9D399"><a href="#"> 6pm Showcase Cast Mary Poppins</a></div>
+                        <div class="event" style="background-color: ##80D991"><a href="#"> 6pm Vocal Performance</a></div>
+                  
+                    </li>
+                    <li class="border">10</li>
+                    <li class="border">11</li>
+                    <li class="border">12</li>
+                    <li class="border">13
+               
+                        <div class="event" style="background-color: #CDFFB5"><a href="#"> 4pm Sprouts Musical Theatre</a></div>
+                        <div class="event" style="background-color: #CDFFB5"><a href="#"> 5pm Jrs Acting: The IFA is on Its Way</a></div>
+                        <div class="event" style="background-color: #CDFFB5"><a href="#"> 6:30pm Teens Acting: The IFA is on Its Way</a></div>
+
+                    </li>
+                    <li class="border">14
+                  
+                        <div class="event" style="background-color: #A5E885"><a href="#"> 4pm Center Stage Mary Poppins</a></div>
+                        <div class="event" style="background-color: #A5E885"><a href="#"> 5pm Level 1 Acting Skills</a></div>
+                        <div class="event" style="background-color: #A5E885"><a href="#"> 6pm Level 2 Acting Skills</a></div>
+                        <div class="event" style="background-color: #A5E885"><a href="#"> 6pm Tues Teens Mary Poppins</a></div>
+     
+                    </li>
+                    <li class="border">15
+        
+                        <div class="event" style="background-color: #96E2A4"><a href="#"> 4pm Jrs Mary Poppins</a></div>
+                        <div class="event" style="background-color: #F9D399"><a href="#"> 5pm Showcase Vocal Performance</a></div>
+                        <div class="event" style="background-color: #96E2A4"><a href="#"> 6pm Spotlight Mary Poppins</a></div>
+        
+                    </li>
+                    <li class="border">16
+                        
+                        <div class="event" style="background-color: ##80D991"><a href="#"> 4pm Thurs Teens Mary Poppins</a></div>
+                        <div class="event" style="background-color: ##80D991"><a href="#"> 5pm Vocal Performance</a></div>
+                        <div class="event" style="background-color: #F9D399"><a href="#"> 6pm Showcase Cast Mary Poppins</a></div>
+                        <div class="event" style="background-color: ##80D991"><a href="#"> 6pm Vocal Performance</a></div>
+                        
+                    </li>
+                    <li class="border">17</li>
+                    <li class="border">18</li>
+                    <li class="border">19</li>
+                    <li class="border">20
+                        
+                    <div class="event" style="background-color:lightgray"> Happy Thanksgiving!</div> 
+                        
+                    <li class="border">21
+                    
+                        <div class="event" style="background-color:lightgray"> Happy Thanksgiving!</div>
+                        
+                    </li>
+                    <li class="border">22
+                    
+                    <div class="event" style="background-color:lightgray"> Happy Thanksgiving!</div>
+                    
+                    </li>
+                    <li class="border">22
+                    
+                    <div class="event" style="background-color:lightgray"> Happy Thanksgiving!</div>
+                        
+                    </li>
+                    <li class="border">23
+                    
+                    <div class="event" style="background-color:lightgray"> Happy Thanksgiving!</div>
+                    
+                    </li>
+                    <li class="border">24</li>
+                    <li class="border">25</li>
+                    <li class="border">26
+                        
+                        <div class="event" style="background-color: #CDFFB5"><a href="#"> 4pm Sprouts Musical Theatre</a></div>
+                        <div class="event" style="background-color: #CDFFB5"><a href="#"> 5pm Jrs Acting: The IFA is on Its Way</a></div>
+                        <div class="event" style="background-color: #CDFFB5"><a href="#"> 6:30pm Teens Acting: The IFA is on Its Way</a></div>
+                        
+                    </li>
+                    <li class="border">27
+                        
+                        <div class="event" style="background-color: #A5E885"><a href="#"> 4pm Center Stage Mary Poppins</a></div>
+                        <div class="event" style="background-color: #A5E885"><a href="#"> 5pm Level 1 Acting Skills</a></div>
+                        <div class="event" style="background-color: #A5E885"><a href="#"> 6pm Level 2 Acting Skills</a></div>
+                        <div class="event" style="background-color: #A5E885"><a href="#"> 6pm Tues Teens Mary Poppins</a></div>
+                        
+                    </li>
+                    <li class="border">28
+                        
+                        <div class="event" style="background-color: #96E2A4"><a href="#"> 4pm Jrs Mary Poppins</a></div>
+                        <div class="event" style="background-color: #F9D399"><a href="#"> 5pm Showcase Vocal Performance</a></div>
+                        <div class="event" style="background-color: #96E2A4"><a href="#"> 6pm Spotlight Mary Poppins</a></div>
+                        
+                    </li>
+                    <li class="border">29
+
+                        <div class="event" style="background-color: ##80D991"><a href="#"> 4pm Thurs Teens Mary Poppins</a></div>
+                        <div class="event" style="background-color: ##80D991"><a href="#"> 5pm Vocal Performance</a></div>
+                        <div class="event" style="background-color: #F9D399"><a href="#"> 6pm Showcase Cast Mary Poppins</a></div>
+                        <div class="event" style="background-color: ##80D991"><a href="#"> 6pm Vocal Performance</a></div>
+                        
+                    </li>
+                    <li class="border">30</li>
+                    <li class="border"></li>                
+                </ol>          
+            </div>
+        </div>
+</div>
+    </div>
+    </div>
+
+
+    
+<!--Footer-->   
+        
+<div class="container p-0">
+    <footer class="text-white text-center text-sm-start" style="background-color: #615737">
+        <div class="container pt-3 pr-0">
+            
+            <div class="row no-gutters">
+                    <div class="col-12">
+                        <img class="leaf img-fluid" width="33%" src="images/leaf.png">
+                    </div>
+                </div>
+            
+          <div class="row mt-4">
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h6 class="text-uppercase mb-4 pb-1">Contact</h6>
+            <p> Kris Blake, Owner <br>
+                Phone: 702-286-7242 <br><br>
+
+                Address:<br>
+                Seedling Theatre Company <br>
+                980 American Pacific Dr. #103 <br>
+                Henderson, NV 89014 <br>
+            </p>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h6 class="text-uppercase mb-4">Hours</h6>
+
+              <table class="table text-center text-white">
+                <tbody class="fw-normal">
+                  <tr>
+                    <td>Monday:</td>
+                    <td>9:00am - 4:30pm</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday:</td>
+                    <td>3:30pm -8:00pm</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday:</td>
+                    <td>4:00pm - 7:30pm</td>
+                  </tr>
+                    <tr>
+                    <td>Thursday:</td>
+                    <td>3:30pm - 8:00pm</td>
+                  </tr>
+                    <tr>
+                    <td>Friday:</td>
+                    <td>9:00am - 4:30pm</td>
+                  </tr>
+                    <tr>
+                    <td>Saturday:</td>
+                    <td>9:00am - 11:30pm</td>
+                  </tr>
+                    <tr>
+                    <td>Sunday:</td>
+                    <td>Closed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+<!--Social-->
+              <div class="col-lg-4 col-md-12 mb-4-md-0">
+                  <h6 class="text-uppercase mb-4 pb-1 pl-2 pt-3">Follow Us!</h6>
+                <div class="mt-4">
+                <a type="button" class="btn btn-floating pb-5"><img src="images/Facebook_icon.png"></a>
+                <a type="button" class="btn btn-floating pb-5"><img src="images/Instagram_icon.png"></a>
+                <a type="button" class="btn btn-floating pb-5"><img src="images/Youtube_icon.png"></a>
+              </div>
+            </div>
+          </div>
+    </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-size: 10px; ">
+            <a class="text-white">Privacy Policy | Do Not Share My Information | Conditions of Use | Notice and Down Policy | Website Accessibility Policy © 2023 Seedling Theatre Company. Do not copy any content (including images) without our consent.
+            </a>
+        </div>
+      </footer>
+    </div> 
+    </body>  
+</html>

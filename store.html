@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59SWR6NW');</script>
+<!-- End Google Tag Manager -->
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intiial-scale=1">
+        <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <!-- JQuery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Bootstrap JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--Font Awesome-->
+            <script src="https://kit.fontawesome.com/02fa1d5f8a.js" crossorigin="anonymous"></script> 
+    
+            <link rel="stylesheet" href="mystyle.css">
+         
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+        </head>
+
+<body>
+     <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59SWR6NW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<style>
+body {
+  background-image: url(images/vine_background_full.png)
+}
+</style>    
+    
+    <div class="container p-0">
+        <header class="row no-gutters">
+            <div class="col mt-auto pl-4 pb-4">
+                 <a href="calendar.html" class="cal-icon"><i class="fa-solid fa-calendar-days fa-2xl" style="color: #a5c8ac;"></i></a>
+            </div>
+            <div class="col-8 mt-auto">
+                <a class="link" href="index.html"><img src="images/Logo.png" alt="" class="img-fluid p-3"></a>
+            </div>
+            <div class=" login col mt-auto p-3">   
+                <div class="link float-right">
+                    <a href="#" type="button" class="login pr-0" data-toggle="modal" data-target="#modalRegisterForm">Sign in</a>&nbsp;
+                    <a href="cart.html" class="cart float-right pr-3"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #a5c8ac;"></i></a>
+                </div>
+            </div>
+        </header> 
+        
+        
+<!--Modal Sign-In-->
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+    
+            <form class="text-center border border-light p-5" action="#!">
+
+                <p class="h4 mb-4" >Sign in</p>
+                
+                <input type="email" id="modalRegisterForm" class="form-control mb-4" placeholder="E-mail">
+                <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+                
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                            <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" style="color:#348444">Forgot password?</a>
+                    </div>
+                </div>
+
+                <button class="btn btn-block my-4 text-white"  type="submit" style="background-color:#348444">Sign in</button>
+
+                <p>Not a member?
+                    <a href="" style="color:#348444">Register</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+        
+ <!--Navigation Bar-->       
+        <nav class="navbar navbar-expand-lg nav justify-content-center p-0">
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar1">
+                <span class="navbar-toggler-icon mt-2"><i class="fa-sharp fa-solid fa-bars fa-xl " style="color: #ffffff;"></i></span>
+            </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbar1">
+            <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="classes.html">Classes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="calendar.html">Calendar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="store.html">Store</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            </ul>
+            </div>
+        </nav>
+        </div>   
+    
+<!--Store-->
+    
+<div class="container p-0" >
+    <div class="row p-0">
+            <div class="col-12">
+                <div class="pb-0 pt-4 " style="max-width: 1336px; background-image: url(images/vine_background.png)">
+                  <div class="row no-gutters">
+                    </div>
+                    <div class="col-md-12 col-classes">
+                      <div class="card-body card-script text-center text-white ml-4 mt-1 mb-0">
+                        <h2 class="card-title m-3 mb-0"><h2 class="h2 responsive-font-example"><u>Register for Classes</u></h2></h2>
+                        <p class="card-text m-4 mb-0 responsive-font-example-text ">Please browse the different classes and <br>products based on the categories below.</p>
+                          
+                        </div>
+                    </div>
+                  </div>
+                </div>
+    </div>
+    </div>
+
+<!--Store Items-->
+    
+<!-- Nav tabs -->
+<div class="container p-0 pt-3" style="background-color: white">
+    <div class="row"> 
+        <div class="col-md-12">
+            <ul class="nav nav-tabs nav-justified m-0 p-0">
+              <li class="nav-item">
+                <a class="nav-link mr-2 " data-toggle="tab" href="#classes">Classes</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" data-toggle="tab" href="#tickets">Tickets</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link ml-2" data-toggle="tab" href="#merch">Merchandise</a>
+              </li>
+            </ul>
+
+<!-- Tab panes -->  
+<div class="tab-content p-0">
+    
+<!--Classes-->
+    <div class="tab-pane container active m-0 p-0 mb-3" id="classes">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="pt-3 pb-1 pl-4 pr-4" style="background-color: white">Musical Theatre</h3>
+            </div>
+        </div>
+        <div class="row">    
+            
+<!--MPJ-->            
+            <div class="col-6">
+                <div class="card mb-3" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/Mary_jr.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0 float-right">
+                       <h5>Fall 2023 - Registration<br>"Mary Poppins Jrs"<br><b>Jr Musical Theatre</b></h5><h6 class="text-muted"> (Ages 8- 9)<br> Wednesdays, 4:00pm-6:00pm,<br> Sept 18-Feb 2024</h6>
+                          <p></p>
+                          <h3 class="">$130.00</h3>  
+                          <a href="#" class="btn"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div> 
+            
+<!--MP-->            
+            <div class="col-6">
+                <div class="card mb-3 float-right" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/Mary.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0 float-right">
+                       <h5>Fall 2023 - Registration<br>"Mary Poppins"<br><b>Teens Musical Theatre</b></h5><h6 class="text-muted"> (Ages 11-18)<br> Tuesdays, 6:00pm-8:00pm,<br>Sept 19-Feb 2024</h6><p></p>
+                          <h3 class="">$130.00</h3>  
+                          <a href="#" class="btn"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div> 
+            
+<!--MP-->            
+            <div class="col-6">
+                <div class="card mb-3" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/Mary.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0 float-right">
+                        <h5>Fall 2023 - Registration<br>"Mary Poppins"<br><b>Teens Musical Theatre</b></h5><h6 class="text-muted"> (Ages 11-18)<br>Thursdays, 4:00pm- 6:00pm,<br>Sept 21-Feb 2024</h6><p></p>
+                          <p></p>
+                          <h3 class="">$130.00</h3>  
+                          <a href="#" class="btn"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div> 
+
+
+<!--MPCS-->            
+            <div class="col-6">
+                <div class="card mb-3 float-right" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/Mary_jr.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0 float-right">
+                       <h5>Fall 2023 - Registration<br>"Mary Poppins"<br><b>Center Stage (MT)</b></h5><h6 class="text-muted"> (Ages 10-12)<br> Tuesdays, 4:00pm- 6:00pm,<br> Sept 19-Feb 2024</h6>
+                          <p></p>
+                          <h3 class="">$130.00</h3>  
+                          <a href="#" class="btn"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div> 
+ </div>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="pt-3 pb-1 pl-4 pr-4" style="background-color: white">Acting Class</h3>
+            </div>
+        </div>
+<!--IFA-->     
+          <div class="row">
+            <div class="col-6">
+                <div class="card mb-3 p-0" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/IFA.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0 float-right">
+                          <h5>Fall 2023 - Registration<br>"The IFA Is On Its Way"<br><b>Teens Acting</b></h5><h6 class="text-muted"> (Ages 11-18)<br> Mondays, 6:30-8:00pm,<br> Sept 18-Dec 9, 2024</h6><p></p>
+                          <p></p>
+                          <h3 class="">$50.00</h3>  
+                          <a href="#" class="btn"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div> 
+<!--IFA-->            
+            <div class="col-6">
+                <div class="card mb-3 float-right" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/IFA.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0 float-right">
+                        <h5>Fall 2023 - Registration<br>"The IFA Is On Its Way"<br><b>Jrs Acting</b></h5><h6 class="text-muted">(Ages 7-10)<br> Mondays, 5:00pm-6:30,<br> Sept 18-Jan 9, 2024</h6><p></p>
+                          <p></p>
+                          <h3 class="">$50.00</h3>  
+                          <a href="#" class="btn"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a>
+                    </div>
+                  </div>
+                </div>
+            </div>  
+        </div>   
+    </div> 
+        
+<!--Acting lvl-1-->  
+        <div class="row">
+            <div class="col-12">
+            </div>
+        </div>
+    
+          <div class="row">
+            <div class="col-6">
+                <div class="card mb-3 p-0" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/acting.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0 float-right">
+                          <h5>Fall 2023 - Registration<br>"Next Level Acting Skills" <b>Level - 1</b><br></h5><h6 class="text-muted"> (Ages 10-18)<br> Tuesdays, 4:00pm-6:00pm,<br> Sept 19-Jan 2, 2024</h6><p></p>
+                          <p></p>
+                          <h3 class="">$175.00</h3>  
+                          <a href="#" class="btn"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div> 
+<!--Acting lvl-2-->            
+                     <div class="col-6">
+                <div class="card mb-3 p-0" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/acting.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0 float-right">
+                          <h5>Fall 2023 - Registration<br>"Next Level Acting Skills" <b>Level - 2</b><br></h5><h6 class="text-muted"> (Ages 10-18)<br> Tuesdays, 6:00pm-7:00pm,<br> Sept 19-Jan 2, 2024</h6><p></p>
+                          <p></p>
+                          <h3 class="">$175.00</h3>  
+                          <a href="#" class="btn"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+        
+<!--Vocal - 1 -->  
+        <div class="row">
+            <div class="col-12">
+                <h3 class="pt-3 pb-1 pl-4 pr-4" style="background-color: white">Vocal Performance Classes</h3>
+            </div>
+        </div>
+    
+          <div class="row">
+            <div class="col-6">
+                <div class="card mb-3 p-0" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/vocal_thurs.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0 float-right">
+                          <h5>Fall 2023 - Registration<br><b>Vocal Performance</b><br></h5><h6 class="text-muted"> (Ages 10-18)<br> Thursdays, 5:00pm-6:00pm,<br> Sept 21-Jan 27, 2024</h6><p></p>
+                          <p></p>
+                          <h3 class="">$30.00</h3>  
+                          <a href="#" class="btn"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div> 
+<!--Vocal - 2 -->            
+         <div class="col-6">
+                <div class="card mb-3 p-0" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/vocal_thurs.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0 float-right">
+                          <h5>Fall 2023 - Registration<br><b>Vocal Performance</b><br></h5><h6 class="text-muted"> (Ages 10-18)<br> Thursdays, 6:00pm-7:00pm,<br> Sept 21-Jan 27, 2024</h6><p></p>
+                          <p></p>
+                          <h3 class="">$30.00</h3>  
+                          <a href="#" class="btn"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+        
+</div>
+
+            
+<!--Tickets-->
+    <div class="tab-pane container fade mb-3" id="tickets">
+         <div class="row">
+            <div class="col-12">
+                <h3 class="pt-3 pb-1 pl-4 pr-4" style="background-color: white">Fall 2023 Shows</h3>
+            </div>
+        </div>
+        <div class="row">        
+ <!--Item 10-->            
+            <div class="col-6">
+                <div class="card mb-3" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/IFA.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0">
+        <h5>"The IFA Is On Its Way"</h5><h6 class="text-muted"> Acting Class Play</h6>
+             <div class="input-group mb-3">
+              <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Classe, Show dates, & Times</option>
+                <option value="1">(Jrs.) Dec 9, 2023 - 10:00am</option>
+                <option value="2">(Jrs.) Dec 9, 2023 - 12:00pm</option>
+                <option value="2">(Teens) Dec 9, 2023 - 3:00pm</option>
+                <option value="2">(Teens) Dec 9, 2023 - 5:30pm</option>
+              </select>
+            </div>
+<!--Input 10-->
+            <div class="input-group">
+                <span class="input-group-prepend">
+                    <button type="button" class="btn btn-outline-secondary btn-number" disabled="disabled" data-type="minus" data-field="quant[10]">
+                        <span class="fa fa-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="quant[10]" class="form-control input-number text-center" value="0" min="0" max="10">
+                <span class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary btn-number" data-type="plus" data-field="quant[10]">
+                        <span class="fa fa-plus"></span>
+                    </button>
+                </span>
+            </div> 
+            <br>
+            <h4 class="text-center">$15.00</h4>  
+            <a href="#" class="btn pl-5"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a>
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div> 
+<!--Item 11-->            
+            <div class="col-6">
+                <div class="card mb-3 float-right" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5 border">
+                    <img class="img-fluid" src="images/Store/Mary.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0">
+  <h5>"Mary Poppins"</h5><h6 class="text-muted">Musical Theatre</h6>
+            <div class="input-group mb-3">
+              <span><select class="custom-select" id="inputGroupSelect01">
+                <option selected>Classe, Show dates, & Times</option>
+                <option value="1">(Center)Feb 2, 2024 - 6:30pm</option>
+                <option value="2">(Center)Feb 3, 2024 - 11:00am</option>
+                <option value="2">(Teens)Feb 10, 2024 - 4:30pm,</option>
+                <option value="2">(Teens)Feb 10, 2024 - 7:30pm,</option>
+                <option value="1">(Spotlight)Feb 23, 2024 - 6:30pm</option>
+                <option value="2">(Spotlight)Feb 24, 2024 - 10:30am</option>
+                <option value="2">(Showcase)Feb 24, 2024 - 1:30pm</option>
+                <option value="2">(Showcase)Feb 24, 2024 - 4:30am</option>
+                <option value="2">(Showcase)Feb 24, 2024 - 7:30am</option>
+              </select></span>
+            </div>
+<!--Input 11-->
+            <div class="input-group">
+                <span class="input-group-prepend">
+                    <button type="button" class="btn btn-outline-secondary btn-number" disabled="disabled" data-type="minus" data-field="quant[11]">
+                        <span class="fa fa-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="quant[11]" class="form-control input-number text-center" value="0" min="0" max="10">
+                <span class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary btn-number" data-type="plus" data-field="quant[11]">
+                        <span class="fa fa-plus"></span>
+                    </button>
+                </span>
+            </div> 
+            <br><h4 class="text-center">$15.00</h4>  
+            <a href="#" class="btn pl-5"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a>
+
+                        </div>
+                  </div>
+                </div>
+            </div>
+        </div>    
+<!--Item 12-->            
+            <div class="col-6">
+                <div class="card mb-3" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5 border">
+                    <img class="img-fluid" src="images/Store/Mary_jr.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0">
+   <h5>"Mary Poppins Jrs."</h5><h6 class="text-muted"> Musical Theatre</h6>
+            <div class="input-group mb-3">
+              <span><select class="custom-select" id="inputGroupSelect01">
+                <option selected>Classe, Show dates, & Times</option>
+                <option value="1">(Jrs.)Feb 23, 2024 - 6:30pm</option>
+                <option value="2">(Jrs.)Feb 24, 2024 - 10:30am</option>
+              </select></span>
+            </div>
+<!--Input 12-->
+            <div class="input-group">
+                <span class="input-group-prepend">
+                    <button type="button" class="btn btn-outline-secondary btn-number" disabled="disabled" data-type="minus" data-field="quant[12]">
+                        <span class="fa fa-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="quant[12]" class="form-control input-number text-center" value="0" min="0" max="10">
+                <span class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary btn-number" data-type="plus" data-field="quant[12]">
+                        <span class="fa fa-plus"></span>
+                    </button>
+                </span>
+            </div> 
+            <br><h4 class="text-center">$15.00</h4>  
+            <a href="#" class="btn pl-5"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a>
+
+                        </div>
+                  </div>
+                </div>
+            </div>
+        </div> 
+        </div>
+    </div>
+    
+    
+<!--Merchandise-->
+    <div class="tab-pane container fade m-0 p-0" id="merch">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="pt-3 pb-1 pl-4 pr-4" style="background-color: white">Apparel</h3>
+            </div>
+        </div>
+        <div class="row">        
+ <!--Item 21-->            
+            <div class="col-6">
+                <div class="card mb-3 p-0" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/Shirt_Drama.jpg">
+                    <img class="img-fluid" src="images/Store/Shirt_Drama_blue.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0">
+                        <h5>Drama Queen Shirt</h5>
+                           <div class="input-group mb-3">
+                            <p class="mb-2 text-muted small">
+                            ("You haven't seen a Drama Queen until you've seen ME onstage")</p>
+                            <p class="mb-2 text-muted text-uppercase small">Color: Pink and Teal</p>
+                            <p class="mb-3 text-muted text-uppercase small">Size: Youth S, M, L, XL, </p>
+                            <br>
+                            <span>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>Color & Size</option>
+                                <option value="1">Pink Youth S</option> 
+                                <option value="1">Pink Youth M</option>
+                                <option value="1">Pink Youth L</option>
+                                <option value="1">Pink Youth XL</option>
+                                <option value="1">Teal Youth S</option>
+                                <option value="1">Teal Youth M</option>
+                                <option value="1">Teal Youth L</option>
+                                <option value="1">Teal Youth XL</option>
+                              </select>
+                            </span>                     
+                            </div>
+<!--Input 21-->
+            <div class="input-group">
+                <span class="input-group-prepend">
+                    <button type="button" class="btn btn-outline-secondary btn-number" disabled="disabled" data-type="minus" data-field="quant[21]">
+                        <span class="fa fa-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="quant[21]" class="form-control input-number text-center" value="0" min="1" max="10">
+                <span class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary btn-number" data-type="plus" data-field="quant[21]">
+                        <span class="fa fa-plus"></span>
+                    </button>
+                </span>
+            </div> 
+            <br>
+            <h4 class="text-center">$15.00</h4>  
+            <a href="#" class="btn pl-5"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a>
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div> 
+<!--Item 22-->            
+            <div class="col-6">
+                <div class="card mb-3 float-right" style="max-width: 540px; background-color: #CFF1BF">
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/Shirt_Prior.jpg">
+                    <img class="img-fluid" src="images/Store/Shirt_Prior_green.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0">
+                        <h5>Seedling Theatre Company</h5>
+                        <div class="input-group mb-3">
+                            <p class="mb-2 text-muted small">(Eat. Sleep. Theatre. Priorities Shirts)</p>
+                            <p class="mb-2 text-muted text-uppercase small">Color: Orange and Green</p>
+                            <p class="mb-3 text-muted text-uppercase small">Size: Youth L, Adult S, M, L, XL, 2XL</p>
+                            <br>
+                            <span>
+                            <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>Color & Size</option>
+                                <option value="1">Orange Youth L</option>
+                                <option value="1">Orange Adult S</option>
+                                <option value="1">Orange Adult M</option>
+                                <option value="1">Orange Adult L</option>
+                                <option value="1">Orange Adult XL</option>
+                                <option value="1">Orange Adult 2XL</option>
+                                <option value="1">Green Youth L</option>
+                                <option value="1">Green Adult S</option>
+                                <option value="1">Green Adult M</option>
+                                <option value="1">Green Adult L</option>
+                                <option value="1">Green Adult XL</option>
+                                <option value="1">Green Adult 2XL</option>
+                              </select>
+                            </span>                     
+                            </div>
+<!--Input 22-->
+            <div class="input-group">
+                <span class="input-group-prepend">
+                    <button type="button" class="btn btn-outline-secondary btn-number" disabled="disabled" data-type="minus" data-field="quant[22]">
+                        <span class="fa fa-minus"></span>
+                    </button>
+                </span>
+                <input type="text" name="quant[22]" class="form-control input-number text-center" value="0" min="1" max="10">
+                <span class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary btn-number" data-type="plus" data-field="quant[22]">
+                        <span class="fa fa-plus"></span>
+                    </button>
+                </span>
+            </div>
+            <br><h4 class="text-center">$15.00</h4>  
+            <div class="text-center"><a href="#" class="btn pl-5"><button type="button" class="btn-lm btn-lg border-0">Add to Cart</button></a></div>
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>     
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+    
+<!--Footer-->   
+        
+    <div class="container p-0">
+    <footer class="text-white text-center text-sm-start" style="background-color: #615737">
+        <div class="container pt-3 pr-0">
+            
+            <div class="row no-gutters">
+                    <div class="col-12">
+                        <img class="leaf img-fluid" width="33%" src="images/leaf.png">
+                    </div>
+                </div>
+            
+          <div class="row mt-4">
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h6 class="text-uppercase mb-4 pb-1">Contact</h6>
+            <p> Kris Blake, Owner <br>
+                Phone: 702-286-7242 <br><br>
+
+                Address:<br>
+                Seedling Theatre Company <br>
+                980 American Pacific Dr. #103 <br>
+                Henderson, NV 89014 <br>
+            </p>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h6 class="text-uppercase mb-4">Hours</h6>
+
+              <table class="table text-center text-white">
+                <tbody class="fw-normal">
+                  <tr>
+                    <td>Monday:</td>
+                    <td>9:00am - 4:30pm</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday:</td>
+                    <td>3:30pm -8:00pm</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday:</td>
+                    <td>4:00pm - 7:30pm</td>
+                  </tr>
+                    <tr>
+                    <td>Thursday:</td>
+                    <td>3:30pm - 8:00pm</td>
+                  </tr>
+                    <tr>
+                    <td>Friday:</td>
+                    <td>9:00am - 4:30pm</td>
+                  </tr>
+                    <tr>
+                    <td>Saturday:</td>
+                    <td>9:00am - 11:30pm</td>
+                  </tr>
+                    <tr>
+                    <td>Sunday:</td>
+                    <td>Closed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+<!--Social-->
+              <div class="col-lg-4 col-md-12 mb-4-md-0">
+                  <h6 class="text-uppercase mb-4 pb-1 pl-2 pt-3">Follow Us!</h6>
+                <div class="mt-4">
+                <a type="button" class="btn btn-floating pb-5"><img src="images/Facebook_icon.png"></a>
+                <a type="button" class="btn btn-floating pb-5"><img src="images/Instagram_icon.png"></a>
+                <a type="button" class="btn btn-floating pb-5"><img src="images/Youtube_icon.png"></a>
+              </div>
+            </div>
+          </div>
+    </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-size: 10px; ">
+            <a class="text-white">Privacy Policy | Do Not Share My Information | Conditions of Use | Notice and Down Policy | Website Accessibility Policy © 2023 Seedling Theatre Company. Do not copy any content (including images) without our consent.
+            </a>
+        </div>
+      </footer>
+    </div>
+
+<!--Javascript-->    
+<script>      
+$('.btn-number').click(function(e){
+    e.preventDefault();
+    
+    fieldName = $(this).attr('data-field');
+    type      = $(this).attr('data-type');
+    var input = $("input[name='"+fieldName+"']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+        if(type == 'minus') {
+            
+            if(currentVal > input.attr('min')) {
+                input.val(currentVal - 1).change();
+            } 
+            if(parseInt(input.val()) == input.attr('min')) {
+                $(this).attr('disabled', true);
+            }
+
+        } else if(type == 'plus') {
+
+            if(currentVal < input.attr('max')) {
+                input.val(currentVal + 1).change();
+            }
+            if(parseInt(input.val()) == input.attr('max')) {
+                $(this).attr('disabled', true);
+            }
+
+        }
+    } else {
+        input.val(0);
+    }
+});
+$('.input-number').focusin(function(){
+   $(this).data('oldValue', $(this).val());
+});
+$('.input-number').change(function() {
+    
+    minValue =  parseInt($(this).attr('min'));
+    maxValue =  parseInt($(this).attr('max'));
+    valueCurrent = parseInt($(this).val());
+    
+    name = $(this).attr('name');
+    if(valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the minimum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    if(valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the maximum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+});
+
+$(".input-number").keydown(function (e) {
+    // Allow: backspace, delete, tab, escape, enter and .
+    if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+         // Allow: Ctrl+A
+        (e.keyCode == 65 && e.ctrlKey === true) || 
+         // Allow: home, end, left, right
+        (e.keyCode >= 35 && e.keyCode <= 39)) {
+             // let it happen, don't do anything
+             return;
+    }
+    // Ensure that it is a number and stop the keypress
+    if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+        e.preventDefault();
+    }
+});
+</script>
+    
+    </body>   
+</html>

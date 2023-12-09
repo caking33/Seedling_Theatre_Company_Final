@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59SWR6NW');</script>
+<!-- End Google Tag Manager -->
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intiial-scale=1">
+        <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <!-- JQuery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Bootstrap JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!--Font Awesome-->
+            <script src="https://kit.fontawesome.com/02fa1d5f8a.js" crossorigin="anonymous"></script> 
+            
+            <link rel="stylesheet" href="mystyle.css">
+         
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;500&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">    
+    </head>
+
+<body>
+     <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59SWR6NW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+   
+<style>
+body {
+  background-image: url(images/vine_background_full.png)
+}
+</style>    
+    
+    <div class="container p-0">
+        <header class="row no-gutters">
+            <div class="col mt-auto pl-4 pb-4">
+                 <a href="calendar.html" class="cal-icon"><i class="fa-solid fa-calendar-days fa-2xl" style="color: #a5c8ac;"></i></a>
+            </div>
+            <div class="col-8 mt-auto">
+                <a class="link" href="index.html"><img src="images/Logo.png" alt="" class="img-fluid p-3"></a>
+            </div>
+            <div class=" login col mt-auto p-3">   
+                <div class="link float-right">
+          <a href="#" type="button" class="login pr-0" data-toggle="modal" data-target="#modalRegisterForm">Sign in</a>&nbsp;
+                    <a href="cart.html" class="cart float-right pr-3"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #a5c8ac;"></i></a>
+                </div>
+            </div>
+        </header> 
+        
+        
+<!--Modal Sign-In-->
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+    
+            <form class="text-center border border-light p-5" action="#!">
+
+                <p class="h4 mb-4" >Sign in</p>
+                
+                <input type="email" id="modalRegisterForm" class="form-control mb-4" placeholder="E-mail">
+                <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
+                
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
+                            <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="" style="color:#348444">Forgot password?</a>
+                    </div>
+                </div>
+
+                <button class="btn btn-block my-4 text-white"  type="submit" style="background-color:#348444">Sign in</button>
+
+                <p>Not a member?
+                    <a href="" style="color:#348444">Register</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+        
+ <!--Navigation Bar-->      
+        <nav class="navbar navbar-expand-lg nav justify-content-center p-0">
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar1">
+                <span class="navbar-toggler-icon mt-2"><i class="fa-sharp fa-solid fa-bars fa-xl " style="color: #ffffff;"></i></span>
+            </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbar1">
+            <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="classes.html">Classes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="calendar.html">Calendar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="store.html">Store</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            </ul>
+            </div>
+        </nav>
+        </div>   
+
+
+    
+<!--Inro Classes-->
+    
+<div class="container p-0" >
+    <div class="row p-0">
+            <div class="col-12">
+                <div class="pb-0 pt-4 " style="max-width: 1336px; background-image: url(images/vine_background.png)">
+                  <div class="row no-gutters">
+                    <div class="col-12-offset-md">
+                    </div>
+                    </div>
+                    <div class="col-md-12 col-classes">
+                      <div class="card-body card-script text-center text-white ml-4 mt-1 mb-0">
+                        <h2 class="card-title m-3 mb-0"><h2 class="h2 responsive-font-example"><u>Shopping Cart</u></h2></h2>
+                          
+                        </div>
+                    </div>
+                  </div>
+                </div>
+    </div>
+    </div>
+    
+<!--Cart-->
+<!--Shipping card-->
+<div class="container p-0 mt-3">
+    <div class="row p-0">
+        <div class="col-lg-7">
+              <div class="card mb-3">
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/Mary_jr.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0">
+                       <h5>Fall 2023 - Registration<br>"Mary Poppins Jrs"<br><b>Jr Musical Theatre</b></h5><h6 class="text-muted"> (Ages 8- 9)<br> Wednesdays, 4:00pm-6:00pm,<br> Sept 18-Feb</h6>
+                          <p></p>
+                        <h3 class="float-right">$130.00</h3><p></p><br>
+                        </div>
+                        <a href="#" type="button" class="card-link-secondary small text-uppercase float-right"><i class="fa fa-trash-o mr-1"></i>Remove Item</a>
+                  </div>
+                </div>
+              
+          
+                  <div class="row no-gutters">
+                    <div class="col-md-5">
+                    <img class="img-fluid" src="images/Store/Mary_jr.jpg">
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card-body m-0">
+                       <h5>"Mary Poppins Jrs" - Ticket<br><b>Musical Theatre</b></h5><h6 class="text-muted"> (Jrs.) Feb 23, 2024 - 6:30pm<br><br> </h6>
+                          <p></p>
+                          <h3 class="float-right">$15.00</h3><p></p><br>
+                          </div>
+                        <a href="#" type="button" class="card-link-secondary small text-uppercase float-right"><i class="fa fa-trash-o mr-1"></i>Remove Item</a>
+                  </div>
+            </div>
+        </div> 
+    <div class="card mb-3">
+        <div class="card body p-4">
+            <h5 class="mb-4">Expected shipping deliver</h5>
+            <p class="mb-0"> Monday, December 11th - Thursday, December 14th</p>
+        </div>
+    </div>
+
+<!--Payment card-->
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="mb-4">Accepted Payments</h5>
+            <i class="fa-brands fa-cc-visa fa-2xl"></i>
+            <i class="fa-brands fa-cc-mastercard fa-2xl"></i>
+            <i class="fa-brands fa-cc-discover fa-2xl"></i>
+            <i class="fa-brands fa-cc-amex fa-2xl"></i>
+            <i class="fa-brands fa-cc-paypal fa-2xl"></i>
+        </div>
+    </div>
+        </div>  
+        
+<!--Total Card-->
+<div class="col-lg-5">  
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="mb-3">Cart Amount</h5>
+            
+            <ul class="list-group list group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                Temporary amount
+                <span>$145.00</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0">
+                Shipping
+                <span>Gratis</span>
+                </li>
+                <hr width="100%" size="2">
+                <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    <div>
+                        <strong>Total Amount</strong>
+                        <strong><p class="mb-0">(Including VAT)</p></strong>
+                    </div>
+                    <span><strong>$145.00</strong></span>
+                </li>
+            </ul>
+            <br>
+            <button type="button" class="btn btn-block waves-effect waves-light text-white" style="background-color:#348444">Checkout</button>
+        </div>
+    </div>
+    
+<!--Discount-->
+<div class="cad mb-3">
+    <div class="cad-body">
+        <a class="dark-grey-text d-flex justify-content-between" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+        Add Discount Code (Optional)
+        <span><i class="fa fa-chevron-down pt-1"></i></span>
+        </a>
+    <div class="collapse" id="collapseExample1">
+        <div class="mt-3">
+            <div class="md-form md-outline mb-0">
+                <input type="text" id="discount-code1" class="form-control font-weight-light" placeholder="Enter discount code">
+            </div>
+        </div>
+        </div>   
+    </div>    
+</div>      
+</div>
+</div>
+</div>
+
+<!--Footer-->   
+        
+    <div class="container p-0">
+    <footer class="text-white text-center text-sm-start" style="background-color: #615737">
+        <div class="container pt-3 pr-0">
+            
+            <div class="row no-gutters">
+                    <div class="col-12">
+                        <img class="leaf img-fluid" width="33%" src="images/leaf.png">
+                    </div>
+                </div>
+            
+          <div class="row mt-4">
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h6 class="text-uppercase mb-4 pb-1">Contact</h6>
+            <p> Kris Blake, Owner <br>
+                Phone: 702-286-7242 <br><br>
+
+                Address:<br>
+                Seedling Theatre Company <br>
+                980 American Pacific Dr. #103 <br>
+                Henderson, NV 89014 <br>
+            </p>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h6 class="text-uppercase mb-4">Hours</h6>
+
+              <table class="table text-center text-white">
+                <tbody class="fw-normal">
+                  <tr>
+                    <td>Monday:</td>
+                    <td>9:00am - 4:30pm</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday:</td>
+                    <td>3:30pm -8:00pm</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday:</td>
+                    <td>4:00pm - 7:30pm</td>
+                  </tr>
+                    <tr>
+                    <td>Thursday:</td>
+                    <td>3:30pm - 8:00pm</td>
+                  </tr>
+                    <tr>
+                    <td>Friday:</td>
+                    <td>9:00am - 4:30pm</td>
+                  </tr>
+                    <tr>
+                    <td>Saturday:</td>
+                    <td>9:00am - 11:30pm</td>
+                  </tr>
+                    <tr>
+                    <td>Sunday:</td>
+                    <td>Closed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+<!--Social-->
+              <div class="col-lg-4 col-md-12 mb-4-md-0">
+                  <h6 class="text-uppercase mb-4 pb-1 pl-2 pt-3">Follow Us!</h6>
+                <div class="mt-4">
+                <a type="button" class="btn btn-floating pb-5"><img src="images/Facebook_icon.png"></a>
+                <a type="button" class="btn btn-floating pb-5"><img src="images/Instagram_icon.png"></a>
+                <a type="button" class="btn btn-floating pb-5"><img src="images/Youtube_icon.png"></a>
+              </div>
+            </div>
+          </div>
+    </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); font-size: 10px; ">
+            <a class="text-white">Privacy Policy | Do Not Share My Information | Conditions of Use | Notice and Down Policy | Website Accessibility Policy © 2023 Seedling Theatre Company. Do not copy any content (including images) without our consent.
+            </a>
+        </div>
+      </footer>
+    </div>
+
+    
+    </body>   
+</html>
